@@ -89,10 +89,10 @@ export default function Rodape() {
                     info@example.com
                   </p>
                   <p>
-                    <MDBIcon icon="phone" className="me-3" />   48 998064305
+                    <MDBIcon icon="phone" className="me-3" />   48 55555555
                   </p>
                   <p>
-                    <MDBIcon icon="print" className="me-3" />   48 998064305
+                    <MDBIcon icon="print" className="me-3" />   48 55555555
                   </p>
                 </MDBCol>
               </MDBRow>
