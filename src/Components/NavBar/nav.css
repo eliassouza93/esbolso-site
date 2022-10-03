@@ -1,103 +1,81 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
-
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
-
 body {
-    font-size: 2.6rem;
-
+  font-size: 1.6rem;
 }
-
 li {
-    list-style: none;
+  list-style: none;
 }
-
 a {
-    text-decoration: none;
-    color: white;
-    font-size: 2.5rem;
+  text-decoration: none;
+  color: rgb(204, 204, 204);
 }
 
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 20vh;
-    background-color: black;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 8vh;
+  background: rgb(0, 33, 65);
 }
-
-.nav__link {
-    color: white;
-    text-decoration: none;
-}
-
 .nav__brand {
-    text-transform: uppercase;
-    color: white;
+  text-transform: uppercase;
 }
 
 .nav__menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 3rem;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
 }
-
 .nav__toggler {
-    display: none;
+  display: none;
 }
-
 .nav__toggler div {
-    width: 2.5rem;
-    height: 0.2rem;
-    margin: 0.4rem;
-    background: rgb(204, 204, 204);
-    transition: 0.3s ease-in;
+  width: 2.5rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background: rgb(204, 204, 204);
+  transition: 0.3s ease-in;
 }
 
 @media screen and (max-width: 768px) {
-    .nav__toggler {
-        display: block;
-        cursor: pointer;
-    }
-    .nav__menu {
-        position: absolute;
-        top: 14vh;
-        right: 0;
-        height: 90vh;
-        width: 100vw;
-        background-color: black;
-        flex-direction: column;
-        transform: translateX(100%);
-        transition: 0.5s ease-in;
-        
-    }
- 
+  .nav__toggler {
+    display: block;
+    cursor: pointer;
+  }
+  .nav__menu {
+    position: fixed;
+    top: 7vh;
+    right: 0;
+    height: 93vh;
+    width: 50vw;
+    background: rgb(0, 33, 65);
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in;
+  }
 }
-
 /* Active Class */
 .nav__active {
-    transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 /* Toggle Icon Animation */
 
 .toggle .line1 {
-    transform: rotate(-45deg) translate(-4px, 5px);
+  transform: rotate(-45deg) translate(-4px, 5px);
 }
-
 .toggle .line2 {
-    opacity: 0;
+  opacity: 0;
 }
-
 .toggle .line3 {
-    transform: rotate(45deg) translate(-4px, -5px);
+  transform: rotate(45deg) translate(-4px, -5px);
 }
