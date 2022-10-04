@@ -23,14 +23,14 @@ function Navbar() {
         label: 'Inicio',
         to: '/'
     }, {
-        label: 'Contato',
-        to: '/contato'
-    }, {
-        label: 'Produtos',
-        to: './produtos'
+        label: 'Projetos',
+        to: '/projetos'
     }, {
         label: 'Sobre',
         to: './sobre'
+    }, {
+        label: 'Contato',
+        to: './contato'
 
     }]
 

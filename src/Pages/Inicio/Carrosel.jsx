@@ -1,8 +1,9 @@
 import Carousel from 'react-bootstrap/Carousel';
 import style from './Inicio.module.scss'
-import copo from '../../Assets/copo.jpg'
-import tabua from '../../Assets/tabua.jpg'
-import viva from '../../Assets/aguaviva.jpg'
+import binary from './Assets-slide/binary.jpg'
+import binary1 from './Assets-slide/binary1.jpg'
+import code from './Assets-slide/code.jpg'
+import code1 from './Assets-slide/code1.jpg'
  
 
 function UncontrolledExample() {
@@ -12,7 +13,7 @@ function UncontrolledExample() {
                 <Carousel.Item className={style.item}>
                     <img
                         className="d-block w-100"
-                        src={copo}
+                        src={binary}
                         alt="First slide"
                     />
                     <Carousel.Caption>
@@ -23,7 +24,7 @@ function UncontrolledExample() {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={tabua}
+                        src={binary1}
                         alt="Second slide"
                     />
                     <Carousel.Caption>
@@ -34,7 +35,20 @@ function UncontrolledExample() {
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
-                        src={viva}
+                        src={code}
+                        alt="Third slide"
+                    />
+                    <Carousel.Caption>
+                        <h3> </h3>
+                        <p>
+
+                        </p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src={code1}
                         alt="Third slide"
                     />
                     <Carousel.Caption>

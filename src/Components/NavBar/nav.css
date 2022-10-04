@@ -1,29 +1,18 @@
-*,
-*::after,
-*::before {
+*{
   margin: 0;
-  box-sizing: border-box;
 }
+ 
 html {
   font-size: 62.5%;
 }
-body {
-  font-size: 1.6rem;
-}
-li {
-  list-style: none;
-}
-a {
-  text-decoration: none;
-  color: rgb(204, 204, 204);
-}
-
+ 
+ 
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 8vh;
-  background: rgb(0, 33, 65);
+  height: 15vh;
+  background-color: #333;
 }
 .nav__brand {
   text-transform: uppercase;
@@ -35,6 +24,17 @@ a {
   justify-content: space-around;
   gap: 3rem;
 }
+.nav__link{
+  color: #efefef;
+  font-size: 2.1rem;
+  text-decoration: none;
+}
+.nav__link:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+ 
+ 
 .nav__toggler {
   display: none;
 }
@@ -53,11 +53,11 @@ a {
   }
   .nav__menu {
     position: fixed;
-    top: 18vh;
+    top: 30vh;
     right: 0;
     height: 93vh;
-    width: 50vw;
-    background: rgb(0, 33, 65);
+    width: 100vw;
+    background-color: #333;
     flex-direction: column;
     transform: translateX(100%);
     transition: 0.5s ease-in;

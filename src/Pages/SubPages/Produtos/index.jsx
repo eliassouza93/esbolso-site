@@ -2,12 +2,12 @@
 
 
 
-export default function Produtos() {
+export default function Prejetos() {
 
 
     return (
         <>
-                <h1>produtos</h1>
+                <h1>projetos</h1>
        
         </>
     )

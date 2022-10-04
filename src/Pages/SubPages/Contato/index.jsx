@@ -6,32 +6,19 @@ import Form from 'react-bootstrap/Form';
 export default function Contato() {
     return (
         <div className={style.pai}>
-            <h1>Contato</h1>
 
-            <h4>Fale sobre você</h4>
-            <div>
-                <Form >
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Email</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" />
-                        <Form.Text className="text-muted">
-                    
-                        </Form.Text>
-                    </Form.Group>
+            <form className={style.formulario}>
+                <label htmlFor="nome">Nome
+                    <input type="text" placeholder='digíte seu nome' className={style.nome} />
+                </label>
+                <label className={style.msg__pai} htmlFor="nome">Mensagem
+                    <input type="text" placeholder='digíte sua mensagem' className={style.msg} />
+                </label>
+                <div className={style.btn__pai} >
+                    <button className={style.btn}>Enviar</button>
+                </div>
 
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Label>Senha</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                        <Form.Check type="checkbox" label="Salvar  " />
-                    </Form.Group>
-                    <Button variant="primary" type="submit">
-                        Submit
-                    </Button>
-                </Form>
-
-            </div>
+            </form>
 
         </div>
     )
